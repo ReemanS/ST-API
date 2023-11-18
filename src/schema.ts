@@ -51,7 +51,7 @@ const createItem = () => {
     itemPrice: Number(itemPrice.value),
     itemClassification: itemClassification.value,
     itemDescription: itemDescription.value,
-    itemImage: itemImage.value,
+    itemImage: `https://drive.google.com/uc?id=${itemImage.value}`,
     itemStock: Number(itemStock.value),
   };
   return newItem;
