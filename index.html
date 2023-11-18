@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <label for="item-name">Item name</label>
+      <input type="text" id="item-name" />
+      <label for="item-price">Item price</label>
+      <input type="number" id="item-price" />
+      <label for="">Item classification</label>
+      <select name="" id="item-classification">
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Books">Books</option>
+        <option value="Beauty">Beauty</option>
+        <option value="Toys">Toys</option>
+        <option value="Sports">Sports</option>
+        <option value="Others">Others</option>
+      </select>
+      <label for="item-description">Item description</label>
+      <textarea
+        name="item-description"
+        id="item-description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <label for="item-image">Item image link</label>
+      <input type="text" id="item-image" />
+      <label for="item-stock">Item stock</label>
+      <input type="number" id="item-stock" />
+    </div>
+
+    <button id="add-to-db">Add</button>
+    <script src="dist/schema.js"></script>
+  </body>
+</html>
