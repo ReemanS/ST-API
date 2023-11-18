@@ -25,7 +25,6 @@ let itemPrice = document.getElementById("item-price");
 let itemClassification = document.getElementById("item-classification");
 let itemDescription = document.getElementById("item-description");
 let itemImage = document.getElementById("item-image");
-let itemStock = document.getElementById("item-stock");
 // make a function that will take the input values and create a new item object:
 const createItem = () => {
     const newItem = {
@@ -35,7 +34,7 @@ const createItem = () => {
         itemClassification: itemClassification.value,
         itemDescription: itemDescription.value,
         itemImage: `https://drive.google.com/uc?id=${itemImage.value}`,
-        itemStock: Number(itemStock.value),
+        itemStock: Math.floor(Math.random() * 200) + 1,
     };
     return newItem;
 };
@@ -54,5 +53,4 @@ addBtn.addEventListener("click", () => {
     itemClassification.value = "";
     itemDescription.value = "";
     itemImage.value = "";
-    itemStock.value = "";
 });
